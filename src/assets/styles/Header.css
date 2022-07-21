@@ -1,0 +1,36 @@
+/* Header */
+
+
+.header-section {
+  background-image: url("../img/portfolio-header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-section .intro {
+  padding: 75px 0 75px 0;
+}
+
+.header-section .intro h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  margin: 20px 0;
+}
+
+.header-section .intro p {
+  color: #ffffff;
+}
+
+/* media query for larger screens */
+
+@media (min-width: 768px) {
+
+  .header-container {
+    flex-direction: row;
+    margin: 8px 0;
+  }
+
+}
