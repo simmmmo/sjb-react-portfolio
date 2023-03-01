@@ -7,7 +7,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
     <div className="navbar">
       <div className="container">
         <div className="logo">
-          <a href="/" className="logo-section">
+          <a href="https://simmmmo.github.io/sjb-react-portfolio/" className="logo-section">
             <h1>Simon Browne</h1>
           </a>
         </div>
