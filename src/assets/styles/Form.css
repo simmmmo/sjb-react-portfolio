@@ -13,7 +13,6 @@ form input {
   font-size: 16px;
   color: #393c3f;
   margin-bottom: 20px;
-  
 }
 
 form textarea {
@@ -26,39 +25,38 @@ form textarea {
 }
 
 form input:focus {
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
   border-color: #35404e65;
   box-shadow: 0 0 0 0.125em rgba(23, 25, 35, 0.232);
 }
 
 form textarea:focus {
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
   border-color: #35404e65;
   box-shadow: 0 0 0 0.125em rgba(23, 25, 35, 0.232);
 }
 
-
-form button  {
+form button {
   display: inline-block;
   height: 50px;
   line-height: 50px;
-  background:#35404e;
+  background: #35404e;
   color: #fff;
   padding: 0 70px;
   border-radius: 6px;
   font-weight: 700;
   margin-top: 30px;
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
   border: none;
   cursor: pointer;
   letter-spacing: 1px;
 }
 
-form button:hover  {
-  background:#252f3c;
+form button:hover {
+  background: #252f3c;
 }
 
 .error-text {
