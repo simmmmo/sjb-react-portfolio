@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/styles/Contact.css'
-import Form from '../components/Form'
+// import Form from '../components/Form'
 import { about } from '../assets/profileData'
 
 import { FaLinkedin, FaPhoneAlt, FaGithubSquare, FaEnvelope } from 'react-icons/fa'
@@ -62,9 +62,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="contact-image">
-              <Form />
-            </div>
+            <div className="contact-image">{/* <Form /> */}</div>
           </div>
         </div>
       </div>
