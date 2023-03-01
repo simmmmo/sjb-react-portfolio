@@ -1,58 +1,54 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import '../assets/styles/Form.css'
-import { validateEmail } from '../utils/helpers';
+import { validateEmail } from '../utils/helpers'
 
 export default function Form() {
-  const [contactName, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [contactName, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
 
-  const [errorMessage, setErrorMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('')
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
+    const { target } = e
+    const inputType = target.name
+    const inputValue = target.value
 
     if (inputType === 'email') {
-      setEmail(inputValue);
+      setEmail(inputValue)
     } else if (inputType === 'message') {
-      setMessage(inputValue);
-    } else 
-      setName(inputValue);
+      setMessage(inputValue)
+    } else setName(inputValue)
+  }
 
-  
-  };
-  
   const blurHandler = (e) => {
-
     if (!e.target.value.length) {
-      setErrorMessage(`Please enter your ${e.target.name}.`);
+      setErrorMessage(`Please enter your ${e.target.name}.`)
     } else {
-      setErrorMessage('');
+      setErrorMessage('')
     }
   }
 
   const handleFormSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     if (!validateEmail(email)) {
-      setErrorMessage('Email is invalid');
-      return;
+      setErrorMessage('Email is invalid')
+      return
     }
 
     // If successful, we want to clear out the input after registration.
-    setName('');
-    setMessage('');
-    setEmail('');
-    alert(`Hello`);
-  };
+    setName('')
+    setMessage('')
+    setEmail('')
+    alert(`Hello`)
+  }
 
   return (
     <div>
       <form className="form">
-      <input
+        <input
           value={contactName}
           name="name"
           onChange={handleInputChange}
@@ -76,16 +72,15 @@ export default function Form() {
           type="message"
           placeholder="Message"
         />
-      {errorMessage && (
-        <div>
-          <span className="error-text">{errorMessage}</span>
-        </div>
-      )}
-       <button type="button" onClick={handleFormSubmit}>
+        {errorMessage && (
+          <div>
+            <span className="error-text">{errorMessage}</span>
+          </div>
+        )}
+        <button type="button" onClick={handleFormSubmit}>
           Submit
         </button>
       </form>
-   
     </div>
-  );
+  )
 }
