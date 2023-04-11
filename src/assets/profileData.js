@@ -33,7 +33,7 @@ const featured = [
       'https://s3.ap-southeast-2.amazonaws.com/testenv.com.au/bootcamp/portfolio/portfolio-project-4.jpg',
     imageAlt: 'TogetherFitness Project',
     github: 'https://github.com/simmmmo/p2-t3-togetherfitness',
-    preview: 'https://together-fitness.herokuapp.com/'
+    preview: 'https://togetherfitness.herokuapp.com/'
   }
 ]
 
