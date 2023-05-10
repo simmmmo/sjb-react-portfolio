@@ -3,7 +3,7 @@
 footer {
   text-align: center;
   background-color: var(--dark);
-  padding: 130px 29%;
+  padding: 130px 10%;
   color: #ffffff;
   line-height: 22px;
   font-weight: 400;
@@ -27,7 +27,7 @@ footer ul {
 
 footer ul li {
   display: inline-block;
-  margin: 0 7px;
+  margin: 7px;
 }
 
 footer ul li a i {
@@ -38,4 +38,37 @@ footer ul li a i {
   padding: 10px 10px 4px 10px;
   line-height: 32px !important;
   background-color: #f6f6f6;
+}
+
+footer ul li a:hover i {
+  color: #fff;
+  background-color: var(--dark);
+  transition: 0.3s ease;
+  outline: 3px solid rgb(255, 255, 255);
+}
+
+/* media query for larger screens */
+
+@media (min-width: 768px) {
+  footer {
+    padding: 130px 15%;
+  }
+}
+
+@media (min-width: 992px) {
+  footer {
+    padding: 130px 29%;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer {
+    padding: 130px 29%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer {
+    padding: 130px 29%;
+  }
 }

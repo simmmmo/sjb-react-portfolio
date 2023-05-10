@@ -1,7 +1,8 @@
 /* Portfolio */
 
 .portfolio .col-portfolio {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 5px;
 }
 
 .portfolio-item {
@@ -13,7 +14,7 @@
 .portfolio-wrapper {
   position: relative;
   transition: all 0.3s ease 0s;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* .portfolio-wrapper:hover{
@@ -25,6 +26,7 @@
 
 .portfolio-thumb img {
   width: 100%;
+  box-shadow: 0 0 0.1rem rgb(17 17 17 / 33%);
 }
 
 .portfolio-thumb {
